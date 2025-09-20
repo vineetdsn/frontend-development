@@ -14,3 +14,20 @@ function changingStyle(){
     alter.type = "textarea";
     alter.style.border = "4px solid #19183b"
 }
+function upperCase() {
+   let uc= document.getElementById("user");
+   uc.value = uc.value.toUpperCase()
+}
+    document.getElementById("user").oninput = upperCase
+
+function Validation(){
+    let store = document.forms.myform.user;
+    let y = store.value
+    if (y == ''){
+       alert('Enter kar')
+       return false
+    }else{
+        document.getElementById("user").disabled = true
+    }
+    
+}
