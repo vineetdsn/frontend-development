@@ -5,6 +5,32 @@
   font-family: "Audiowide", sans-serif;
 }
 
+/* header */
+header{
+  text-align: center;
+  color: 19183B;
+}
+
+/* navbar */
+ul{
+  list-style: none;
+  background: #E7F2EF;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;  
+}
+
+ul li{
+    padding: 4px 12px;
+
+}
+
+ul li a{
+  text-decoration: none;
+  color: #31326F;
+  cursor: pointer;
+}
+/* Form */
 form {
   max-width: 600px;
   width: 100%;
@@ -47,4 +73,15 @@ input[type=password] {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer{
+  color: #4FB7B3;
+  margin: 10px;
 }
