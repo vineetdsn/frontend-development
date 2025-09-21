@@ -76,12 +76,11 @@ getUser();
 
 // API fetch using Fetch API
 // Define API Url
-const apiUrl = "https://randomuser.me/api/";
-
+const url = 'https://jsonplaceholder.typicode.com/users';
 // Make a GET request
 const outputElement = document.getElementById('output');
 
-fetch(apiUrl)
+fetch(url)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -89,6 +88,7 @@ fetch(apiUrl)
     return response.json();
   })
   .then(data => {
+    console.log("Data display"+data.results)
     // Display data in an HTML element
     outputElement.textContent = JSON.stringify(data.results);
   })
