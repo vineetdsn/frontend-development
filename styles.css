@@ -107,3 +107,12 @@ footer{
   margin: 25px auto;
   cursor: pointer;
 }
+
+/* API */
+.apibox{
+  border: 2px solid #31326F;
+  border-radius: 4px;
+  margin: 20px 20px;
+  padding: 10px;
+  text-align: center;
+}
