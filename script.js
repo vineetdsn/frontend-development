@@ -114,6 +114,37 @@ fetch(url)
 
   fetch(postUrl, fetchData)
     .then(function(){
-      
+
     })
+
+
+    const apiUrl = 'https://api.example.com/data';
+const pdata = {
+  name: 'John Doe',
+  email: 'johndoe@example.com',
+};
+
+const requestOptions = {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(pdata),
+};
+
+fetch(apiUrl, requestOptions)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(pdata => {
+    outputElement.textContent = JSON.stringify(pdata, null, 2);
+  })
+  .catch(error => {
+    console.error
+
+('Error:', error);
+  });
 
