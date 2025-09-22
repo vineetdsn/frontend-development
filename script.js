@@ -150,17 +150,19 @@ fetch(apiUrl, requestOptions)
 
 // Promise
 
-let promise = new Promise((resolve, reject) => {
-  setTimeout(() => reject(new Error("Whoops!")), 1000);
-});
+// let promise = new Promise((resolve, reject) => {
+//   setTimeout(() => reject(new Error("Whoops!")), 1000);
+// });
 
-// .catch(f) is the same as promise.then(null, f)
-promise.catch(alert); // shows "Error: Whoops!" after 1 second
+// // .catch(f) is the same as promise.then(null, f)
+// promise.catch(alert); // shows "Error: Whoops!" after 1 second
 
 // cards
 let cards = 3;
 let cardBox = document.getElementsByClassName('flex-cards');
-
+let sectionCards = document.getElementById('cards');
 for (i=0; i<cards; i++){
-  document.createElement('cardBox')
+  let card =document.createElement('div')
+  card.classList.add('flex-cards');
+  sectionCards.appendChild(card)
 }

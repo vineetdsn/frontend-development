@@ -117,6 +117,9 @@ footer{
   text-align: center;
 }
 
+#cards{
+  display: flex;
+justify-content: space-around;}
 .flex-cards{
   width:150px;
   height: 200px;
