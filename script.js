@@ -95,3 +95,25 @@ fetch(url)
   .catch(error => {
     console.error('Error:', error);
   });
+
+  // Handling POST request of API
+
+  const postUrl = 'https://jsonplaceholder.typicode.com/users';
+
+  let data = {
+    name: 'Jack hammer'
+  }
+
+  let fetchData = {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: new Headers({
+      'Content-Type': 'application/json; charset=UTF-8'
+    })
+  }
+
+  fetch(postUrl, fetchData)
+    .then(function(){
+      
+    })
+
