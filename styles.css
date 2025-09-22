@@ -116,3 +116,11 @@ footer{
   padding: 10px;
   text-align: center;
 }
+
+.flex-cards{
+  width:150px;
+  height: 200px;
+  border: 2px solid #DC143C;
+  border-radius: 4px;
+  margin: 10px 20px;
+}

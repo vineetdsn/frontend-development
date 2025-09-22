@@ -157,3 +157,10 @@ let promise = new Promise((resolve, reject) => {
 // .catch(f) is the same as promise.then(null, f)
 promise.catch(alert); // shows "Error: Whoops!" after 1 second
 
+// cards
+let cards = 3;
+let cardBox = document.getElementsByClassName('flex-cards');
+
+for (i=0; i<cards; i++){
+  document.createElement('cardBox')
+}
