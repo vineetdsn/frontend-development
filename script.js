@@ -166,3 +166,51 @@ for (i=0; i<cards; i++){
   card.classList.add('flex-cards');
   sectionCards.appendChild(card)
 }
+
+// bar
+class Dial {
+  constructor(container) {
+    this.container = container;
+    this.size = this.container.dataset.size;
+    this.strokeWidth = this.size / 8;
+    this.radius = this.size / 2 - this.strokeWidth / 2;
+    this.value = this.container.dataset.value;
+    this.direction = this.container.dataset.arrow;
+    this.svg;
+    this.defs;
+    this.slice;
+    this.overlay;
+    this.text;
+    this.arrow;
+    this.create();
+  }
+
+  create() {
+    this.createSvg();
+    this.createDefs();
+    this.createSlice();
+    this.createOverlay();
+    this.createText();
+    this.createArrow();
+    this.container.appendChild(this.svg);
+  }
+
+  createSvg() {
+    let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("width", `${this.size}px`);
+    svg.setAttribute("height", `${this.size}px`);
+    this.svg = svg;
+  }
+
+  createDefs() {
+    var defs = document.createElementNS("http://www.w3.org/2000/svg", "defs"),
+      linearGradient = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "linearGradient"
+      ),
+      stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop"),
+      stop2 = document.createElementNS("http://www.w3.org/2000/svg", "stop"),
+      linearGradientBackground = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "background"
+      );
