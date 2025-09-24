@@ -1,146 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta & Title -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning</title>
-    <link id="favicon" rel="icon" href="" sizes="16x16" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Audiowide"
-    />
-    <!-- icons -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- Favicon -->
+    <link id="favicon" rel="icon" href="" sizes="16x16" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
+
   <body>
-    <header>FrontEnd Development</header>
-    <div>
+    <!-- Header -->
+    <header>
+      <h1>FrontEnd Development</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
       <ul>
         <li><a href="Home">Home</a></li>
-        <li><a href="ABout">About</a></li>
+        <li><a href="About">About</a></li>
         <li><a href="Contact">Contact</a></li>
       </ul>
-    </div>
-    <!-- Form -->
-    <section>
-      <nav>
-        <form action="#">
-          <label for="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Enter username"
-          />
+    </nav>
 
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Enter password"
-          />
+    <!-- Login Form -->
+    <section class="login-section">
+      <form action="#">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" />
 
-          <button class="form-btn" type="submit" value="submit">Login</button>
-        </form>
-      </nav>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" />
+
+        <button class="form-btn" type="submit">Login</button>
+      </form>
     </section>
+
+    <!-- Testing Section -->
     <section class="testing">
       <p class="date-box"></p>
       <p id="demo"></p>
 
       <p id="paragraph" onmouseover="show()">Idhar dekho</p>
-      <!-- <input type="text" id="textBox" onmouseover="changingStyle()"> -->
 
-      <button
-        id="testing-button"
-        onclick="document.getElementById('date-box').innerHTML = 'hi'"
-      >
+      <button onclick="document.getElementById('date-box').innerHTML = 'hi'">
         Click
       </button>
-      <button id="testing-button" onclick="displayDate()">Click</button>
+      <button onclick="displayDate()">Click</button>
     </section>
 
-    <section class="form-box" onsubmit="Validation()">
-      <form action="#" name="myform">
-        <label for="user">user </label>
+    <!-- Custom Form -->
+    <section class="form-box">
+      <form action="#" name="myform" onsubmit="Validation()">
+        <label for="user">User</label>
         <input type="text" id="user" name="user" />
-        <button type="submit" value="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
-<!-- Api -->
+
+    <!-- API Section -->
     <section class="apibox">
       <h2 id="full-name"></h2>
+
       <div class="email">
         <i class="fa fa-envelope"></i>
         <a href="" id="email"></a>
       </div>
+
       <div class="phone">
-        <i class="fa fa-phone"></i> <a href="" id="phone"></a>
+        <i class="fa fa-phone"></i>
+        <a href="" id="phone"></a>
       </div>
+
       <div id="images"></div>
+
       <div class="details">
-        <label for="age" id="age"></label>
-        <label for="gender" id="gender"></label>
-        <label for="location" id="location"></label>
-        <label for="country" id="country"></label>
+        <label id="age"></label>
+        <label id="gender"></label>
+        <label id="location"></label>
+        <label id="country"></label>
       </div>
 
       <div class="output"></div>
     </section>
-<!--  -->
+
+    <!-- Cards Section -->
     <section id="cards">
       <div class="flex-cards"></div>
     </section>
 
-    <!-- Star rating -->
-     <section class="rating">
-      <input type="radio" name="rating" id="star5"
-      value="5"><label for="star5"></label>
-      <input type="radio" name="rating" id="star4"
-      value="4"><label for="star4"></label>
-      <input type="radio" name="rating" id="star3"
-      value="3"><label for="star3"></label>
-      <input type="radio" name="rating" id="star2"
-      value="2"><label for="star2"></label>
-      <input type="radio" name="rating" id="star1"
-      value="1"><label for="star1"></label>
-     </section>
+    <!-- Star Rating -->
+    <section class="rating">
+      <input type="radio" name="rating" id="star5" value="5" />
+      <label for="star5"></label>
 
-     <!-- Dropdown -->
-      <section class="dropdown">
-        <h1>Dropdown with searchable text</h1>
-<form>
-    <label for="myHouse">Choose your magical house:</label>
-    <input list="magicHouses" id="myHouse" name="myHouse" placeholder="type here..." />
-    <datalist id="magicHouses">
-  <option value="Gryfindor">
-  <option value="Hufflepuff">
-  <option value="Slytherin">
-  <option value="Ravenclaw">
-  <option value="Horned Serpent">
-  <option value="Thunderbird">
-        <option value="Pukwudgie">
-  <option value="Wampus">
+      <input type="radio" name="rating" id="star4" value="4" />
+      <label for="star4"></label>
 
-</datalist>
-</form>
-      </section>
+      <input type="radio" name="rating" id="star3" value="3" />
+      <label for="star3"></label>
+
+      <input type="radio" name="rating" id="star2" value="2" />
+      <label for="star2"></label>
+
+      <input type="radio" name="rating" id="star1" value="1" />
+      <label for="star1"></label>
+    </section>
+
+    <!-- Dropdown -->
+    <section class="dropdown">
+      <h1>Dropdown with searchable text</h1>
+      <form>
+        <label for="myHouse">Choose your magical house:</label>
+        <input
+          list="magicHouses"
+          id="myHouse"
+          name="myHouse"
+          placeholder="type here..."
+        />
+        <datalist id="magicHouses">
+          <option value="Gryfindor" />
+          <option value="Hufflepuff" />
+          <option value="Slytherin" />
+          <option value="Ravenclaw" />
+          <option value="Horned Serpent" />
+          <option value="Thunderbird" />
+          <option value="Pukwudgie" />
+          <option value="Wampus" />
+        </datalist>
+      </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
       <p>@Copyright 2025</p>
       <p>email@mail.com</p>
     </footer>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
   </body>
 </html>
