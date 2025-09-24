@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,168 +6,283 @@
   font-family: "Audiowide", sans-serif;
 }
 
-/* header */
-header{
-  text-align: center;
-  color: 19183B;
+/* Body */
+body {
+  background-color: lightsteelblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* navbar */
-ul{
+/* Header */
+header {
+  text-align: center;
+  color: #19183B; /* fixed missing # */
+  margin: 20px 0;
+}
+
+header h1 {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* Navbar */
+ul {
   list-style: none;
   background: #E7F2EF;
   display: flex;
   justify-content: center;
-  margin: 10px 0;  
+  margin: 10px 0;
+  padding: 8px;
 }
 
-ul li{
-    padding: 4px 12px;
-
+ul li {
+  padding: 4px 12px;
 }
 
-ul li a{
+ul li a {
   text-decoration: none;
   color: #31326F;
   cursor: pointer;
+  font-weight: 600;
 }
-/* Form */
+
+/* Forms - General */
 form {
   max-width: 600px;
   width: 100%;
-      padding: 20px;
-
-  margin: auto;
-  border: 2px solid #19183b;
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid #19183B;
   border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
-label {
+/* Form Labels */
+form label {
   min-width: 48%;
   margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
 }
 
-.form-btn {
-  margin: 10px;
-  padding: 2px 8px;
+/* Form Inputs */
+form input[type=text],
+form input[type=password] {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 2px solid lightslategray;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  outline: none;
+  border: 2px solid darkslategray;
+}
+
+/* Form Button */
+.form-btn,
+button[type=submit] {
+  margin: 10px auto;
+  padding: 6px 14px;
   background-color: #fff;
-  color: #19183b;
-  border: 2px solid #19183b;
+  color: #19183B;
+  border: 2px solid #19183B;
   border-radius: 4px;
-}
-
-input[type=text] {
-  min-width: 45%;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
-}
-
-input[type=password] {
-  min-width: 45%;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
-}
-
-/* Footer */
-footer{
-  display: flex;
-  justify-content: space-around;
-}
-
-footer{
-  color: #4FB7B3;
-  margin: 10px;
-}
-
-
-/* Testing */
-.date-box{
-  width: 100px;
-  height: 50px;
-  font-size: medium;
-  color: #19183b;
-  margin: 25px auto;
-  border: 2px solid #647FBC;
-  border-radius: 4px;
-}
-
-#testing-button{
-  padding: 4px 12px;
-  color: #19183b;
-  border: 2px solid #647FBC;
-  border-radius: 4px;
-  display: block;
-  margin: 25px auto;
   cursor: pointer;
 }
 
-/* API */
-.apibox{
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: #4FB7B3;
+  margin: 20px;
+  width: 100%;
+}
+
+/* Testing Section */
+.date-box {
+  width: 100px;
+  height: 50px;
+  font-size: medium;
+  color: #19183B;
+  margin: 25px auto;
+  border: 2px solid #647FBC;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#testing-button {
+  padding: 6px 14px;
+  color: #19183B;
+  border: 2px solid #647FBC;
+  border-radius: 4px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+  background: #fff;
+}
+
+/* API Section */
+.apibox {
   border: 2px solid #31326F;
   border-radius: 4px;
-  margin: 20px 20px;
+  margin: 20px;
   padding: 10px;
   text-align: center;
 }
 
-#cards{
+/* Cards */
+#cards {
   display: flex;
-justify-content: space-around;}
-.flex-cards{
-  width:150px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-cards {
+  width: 150px;
   height: 200px;
   border: 2px solid #DC143C;
   border-radius: 4px;
-  margin: 10px 20px;
+  margin: 10px;
+  background: #fff;
 }
 
 /* Rating */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'); body { background: #f1f1f1; } body h1 { font-family: 'Roboto Slab', serif; margin: 50px 20px 40px; font-size: 50px; letter-spacing: 0.5px; color: #999; text-align: center; } .rating { width: 208px; height: 40px; margin: 0 auto; padding: 40px 50px; border: 1px solid #ccc; background: #f9f9f9; } .rating label { float: right; position: relative; width: 40px; height: 40px; cursor: pointer; } .rating label:not(:first-of-type) { padding-right: 2px; } .rating label:before { content: "\2605"; font-size: 42px; color: #ccc; line-height: 1; } .rating input { display: none; } .rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before { color: #f9df4a; }
-
-/* Only for styling, not required for it to work */
-body {
-    background-color: lightsteelblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-h1 {
-    font-family: "Sacramento", cursive;
-    font-size: 3rem;
-    color: #fff;
-    font-family: "Berkshire Swash", cursive;
+.rating {
+  width: 208px;
+  height: 40px;
+  margin: 20px auto;
+  padding: 40px 50px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
 }
 
-form {
-    max-width: 40vw;
-    display: flex;
-    flex-direction: column;
+.rating label {
+  float: right;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
-form label {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 12px;
+.rating label:not(:first-of-type) {
+  padding-right: 2px;
 }
 
-form input {
-    border: 2px solid lightslategray;
-    height: 40px;
-    border-radius: 3px;
-    padding: 5px;
-    font-size: 1rem;
+.rating label:before {
+  content: "\2605";
+  font-size: 42px;
+  color: #ccc;
+  line-height: 1;
 }
 
-form input:focus {
-    outline: none;
-    border: 2px solid darkslategray;
+.rating input {
+  display: none;
+}
+
+.rating input:checked ~ label:before,
+.rating:not(:checked) > label:hover:before,
+.rating:not(:checked) > label:hover ~ label:before {
+  color: #f9df4a;
+}
+
+/* bar */
+.wrapper {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+.container {
+  font: 1px;
+  padding: 0 20px;
+}
+
+/* game */
+.game{
+background-image: url(bg.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+.hide {
+display: none;
+}
+.startScreen {
+width: 500px;
+height: 107px;
+line-height: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+margin: auto;
+background-color: rgb(43, 205, 226);
+text-align: center;
+border-bottom: 2px solid rgb(132, 197, 197);
+}
+.score,
+.highScore {
+position: absolute;
+top: 10px;
+left: 20px;
+text-align: center;
+background-color: rgb(100, 224, 156);
+width: 200px;
+color: rgb(59, 40, 40);
+line-height: 40px;
+border-radius: 4px;
+font-size: 1.2em;
+}
+.ClickToStart {
+cursor: pointer;
+}
+.gameArea {
+height: 100vh;
+width: 400px;
+margin: auto;
+position: relative;
+background-color: rgb(32, 32, 32);
+overflow: hidden;
+border-left: 4px dashed white;
+border-right: 4px dashed white;
+}
+.car{
+background: url(car.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+height: 75px;
+width: 50px;
+position: absolute;
+top: 520px;
+}
+.Opponents {
+background: url(opponent car.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+height: 75px;
+width: 50px;
+position: absolute;
+top: 520px;
+}
+.roadLines {
+height: 100px;
+width: 10px;
+background-color: white;
+position: absolute;
+margin-left: 195px;
 }
