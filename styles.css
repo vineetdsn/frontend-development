@@ -314,3 +314,20 @@ a, button {
   background: none;
   text-decoration: none;
 }
+
+.open-menu, .close-menu {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #252a32;
+  background: none;
+}
+.close-menu {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  border: none;
+  outline: none;
+  color: #252a32;
+  background: none;
+}
