@@ -398,3 +398,16 @@ a, button {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.footer2 .heading:hover {
+  color: rgb(243, 168, 7);
+}
+.footer2 .div:hover {
+  transform: scale(1.05);
+}
+.footer3 h4 {
+  margin: 0 10px;
+}
+.footer2 div {
+  margin: 10px;
+}
