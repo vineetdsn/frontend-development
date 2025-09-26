@@ -370,4 +370,31 @@ a, button {
   transform: translate3d(0, 0, 0);
   transition-duration: 0.7s;
   transition-delay: 0.2s;
+
+  
+  .footer2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.footer0 {
+  font-weight: 1200;
+  transition-duration: 1s;
+}
+.footer0:hover {
+  color: rgb(243, 168, 7);
+}
+.footer2 .heading {
+  font-weight: 900;
+  font-size: 18px;
+}
+.footer3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
