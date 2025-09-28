@@ -458,3 +458,15 @@ a, button {
     background-color: #f44336;
     transform: rotate(315deg);
 }
+
+.arrow{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    color:#fff;
+}
+.arrow::before{
+    content:"\1F817";
+    font-size:50px;
+}
