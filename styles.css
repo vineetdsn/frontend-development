@@ -432,3 +432,16 @@ a, button {
     background-color: #ff9800;
     transform: rotate(45deg);
 }
+
+.container .three{
+    background-color: #e91e63;
+    transform:rotate(90deg);
+}
+.container .four{
+    background-color: #4caf50;
+    transform: rotate(135deg);
+}
+.container .five{
+    background-color: #009688;
+    transform: rotate(180deg);
+}
