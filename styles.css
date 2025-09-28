@@ -411,3 +411,14 @@ a, button {
 .footer2 div {
   margin: 10px;
 }
+
+.container{
+    width:500px;
+    height:500px;
+    background-color: #ccc;
+    border-radius:50%;
+    border:15px solid #dde;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+}
