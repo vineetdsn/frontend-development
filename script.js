@@ -424,3 +424,23 @@ class Birthday {
 
     ctx.globalCompositeOperation = 'lighter'
     for (let firework of this.fireworks) firework.update(delta)
+
+      
+    // if enough time passed... create new new firework
+    this.counter += delta * 3 // each second
+    if (this.counter >= 1) {
+      this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        random(0, this.width),
+        random(this.spawnC, this.spawnD),
+        random(0, 360),
+        random(30, 110)))
+      this.counter = 0
+    }
+
+    // remove the dead fireworks
+    if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
+
+  }
+}
