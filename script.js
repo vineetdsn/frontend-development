@@ -366,3 +366,9 @@ class Dial {
 const containers = document.getElementsByClassName("chart");
 const dial = new Dial(containers[0]);
 dial.animateStart();
+
+
+// helper functions
+const PI2 = Math.PI * 2
+const random = (min, max) => Math.random() * (max - min + 1) + min | 0
+const timestamp = _ => new Date().getTime()
