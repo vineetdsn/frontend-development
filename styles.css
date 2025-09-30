@@ -527,3 +527,19 @@ h1 {
   font-weight: 100;
   font-family: "PT Sans", sans-serif;
 }
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 2rem;
+  background: #fbfbfc;
+  outline: 0;
+  font-family: "PT Sans", sans-serif;
+  border: 1px solid #c8c7cb;
+  border-radius: 2px;
+}
