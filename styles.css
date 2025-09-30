@@ -517,3 +517,13 @@ h1 {
   z-index: 1;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: 0 0 2rem -2rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: "PT Sans", sans-serif;
+}
