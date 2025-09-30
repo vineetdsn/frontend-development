@@ -549,3 +549,22 @@ label {
 textarea {
   height: 20rem;
 }
+
+.voiceinator button {
+  background: #72a3da;
+  color: #fff;
+  border: 0;
+  width: 49%;
+  float: left;
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+.voiceinator button:active {
+  top: 2px;
+}
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
