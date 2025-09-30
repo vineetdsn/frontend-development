@@ -611,3 +611,18 @@ input[type="range"]:-moz-focusring {
   outline: 1px solid #dcdde2;
   outline-offset: -1px;
 }
+
+.voiceinator select {
+  display: inline-block;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  background: #fbfbfc
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23c8c7cb" viewBox="0 0 20 20"><path d="M5 8l6 6 6-6z"/></svg>')
+    right 5px center no-repeat;
+  padding: 10px 40px 10px 10px;
+}
+select::-ms-expand {
+  display: none;
+}
