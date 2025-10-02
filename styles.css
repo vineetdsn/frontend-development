@@ -659,3 +659,12 @@ transform: translatey(-5%);
 transition: transform 0.5s;
 font-size: 1.7rem;
 }
+
+.glass h1 {
+font-size: 1.5rem;
+text-align: center;
+}
+.glass h2 {
+font-size: 1rem;
+margin-top: 20px;
+}
