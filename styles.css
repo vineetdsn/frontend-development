@@ -626,3 +626,19 @@ input[type="range"]:-moz-focusring {
 select::-ms-expand {
   display: none;
 }
+
+.glass {
+width: 500px;
+height: 400px;
+background-color: rgba(255, 255, 255, 0.1);
+padding: 50px;
+color: #000;
+border-radius: 9px;
+backdrop-filter: blur(50px);
+border: 2px solid transparent;
+background-clip: padding-box;
+box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+line-height: 1.5;
+transform: translatey(-5%);
+transition: transform 0.5s;
+}
