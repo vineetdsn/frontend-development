@@ -660,14 +660,7 @@ transition: transform 0.5s;
 font-size: 1.7rem;
 }
 
-.glass h1 {
-font-size: 1.5rem;
-text-align: center;
-}
-.glass h2 {
-font-size: 1rem;
-margin-top: 20px;
-}
+
 
 .input {
 width: 100%;
@@ -684,9 +677,4 @@ padding-top: 0;
 outline: none;
 font-size: 1.5rem;
 border-radius: 20px;
-}
-
-.glass p {
-font-size: 1.6rem;
-margin-top: 30px;
 }
