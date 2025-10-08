@@ -510,27 +510,6 @@ class Firework {
   }
 }
 
-let canvas = document.getElementById('birthday')
-let ctx = canvas.getContext('2d')
-
-let then = timestamp()
-
-let birthday = new Birthday
-window.onresize = () => birthday.resize()
-document.onclick = evt => birthday.onClick(evt)
-document.ontouchstart = evt => birthday.onClick(evt)
-
-  ;(function loop(){
-  	requestAnimationFrame(loop)
-
-  	let now = timestamp()
-  	let delta = now - then
-
-    then = now
-    birthday.update(delta / 1000)
-  	
-
-  })()
 
   // 
   const msg = new SpeechSynthesisUtterance();
