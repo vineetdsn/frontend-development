@@ -660,21 +660,3 @@ transition: transform 0.5s;
 font-size: 1.7rem;
 }
 
-
-
-.input {
-width: 100%;
-height: 70px;
-overflow: hidden;
-margin-top: 40px;
-}
-.input input {
-width: 100%;
-height: 70px;
-border: none;
-padding-left: 30px;
-padding-top: 0;
-outline: none;
-font-size: 1.5rem;
-border-radius: 20px;
-}
