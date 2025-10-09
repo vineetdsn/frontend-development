@@ -207,10 +207,7 @@ footer {
   right: 0;
   display: flex;
 }
-.container {
-  font: 1px;
-  padding: 0 20px;
-}
+
 
 /* game */
 .game{
