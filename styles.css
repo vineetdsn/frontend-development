@@ -284,12 +284,6 @@ top: 520px;
   text-rendering: optimizeLegibility;
 }
 
-img {
-  display: block;
-  width: 60%;
-  height: 50%;
-  margin: 1rem 20rem;
-}
 a, button {
   font-family: inherit;
   font-size: inherit;
