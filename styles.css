@@ -251,16 +251,6 @@ font-size: 1.2em;
 .ClickToStart {
 cursor: pointer;
 }
-.gameArea {
-height: 100vh;
-width: 400px;
-margin: auto;
-position: relative;
-background-color: rgb(32, 32, 32);
-overflow: hidden;
-border-left: 4px dashed white;
-border-right: 4px dashed white;
-}
 .car{
 background: url(car.png);
 background-repeat: no-repeat;
