@@ -284,15 +284,6 @@ top: 520px;
   text-rendering: optimizeLegibility;
 }
 
-a, button {
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  text-decoration: none;
-}
 
 .open-menu, .close-menu {
   cursor: pointer;
