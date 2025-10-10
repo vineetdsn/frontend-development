@@ -107,18 +107,6 @@ footer {
   width: 100%;
 }
 
-/* Testing Section */
-.date-box {
-  width: 100px;
-  height: 50px;
-  font-size: medium;
-  color: #19183B;
-  margin: 25px auto;
-  border: 2px solid #647FBC;
-  border-radius: 4px;
-  text-align: center;
-  line-height: 50px;
-}
 
 /* API Section */
 .apibox {
