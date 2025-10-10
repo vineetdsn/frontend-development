@@ -195,13 +195,6 @@ class Dial {
     this.container.appendChild(this.svg);
   }
 
-  createSvg() {
-    let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("width", `${this.size}px`);
-    svg.setAttribute("height", `${this.size}px`);
-    this.svg = svg;
-  }
-
   createDefs() {
     var defs = document.createElementNS("http://www.w3.org/2000/svg", "defs"),
       linearGradient = document.createElementNS(
