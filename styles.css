@@ -120,17 +120,6 @@ footer {
   line-height: 50px;
 }
 
-#testing-button {
-  padding: 6px 14px;
-  color: #19183B;
-  border: 2px solid #647FBC;
-  border-radius: 4px;
-  display: block;
-  margin: 15px auto;
-  cursor: pointer;
-  background: #fff;
-}
-
 /* API Section */
 .apibox {
   border: 2px solid #31326F;
