@@ -229,19 +229,6 @@ class Dial {
     this.defs = defs;
   }
 
-  createSlice() {
-    let slice = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    slice.setAttribute("fill", "none");
-    slice.setAttribute("stroke", "url(#gradient)");
-    slice.setAttribute("stroke-width", this.strokeWidth);
-    slice.setAttribute(
-      "transform",
-      `translate(${this.strokeWidth / 2},${this.strokeWidth / 2})`
-    );
-    slice.setAttribute("class", "animate-draw");
-    this.svg.appendChild(slice);
-    this.slice = slice;
-  }
 
   
 
