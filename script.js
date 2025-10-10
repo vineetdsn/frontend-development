@@ -273,19 +273,6 @@ class Dial {
     this.arrow = arrow;
   }
 
-  animateStart() {
-    let v = 0;
-    const intervalOne = setInterval(() => {
-      const p = +(v / this.value).toFixed(2);
-      const a = p < 0.95 ? 2 - 2 * p : 0.05;
-      v += a;
-      if (v >= +this.value) {
-        v = this.value;
-        clearInterval(intervalOne);
-      }
-      this.setValue(v);
-    }, 10);
-  }
 
   polarToCartesian(centerX, centerY, radius, angleInDegrees) {
     const angleInRadians = ((angleInDegrees - 180) * Math.PI) / 180.0;
