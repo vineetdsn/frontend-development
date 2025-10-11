@@ -167,24 +167,6 @@ for (i=0; i<cards; i++){
   sectionCards.appendChild(card)
 }
 
-// bar
-class Dial {
-  constructor(container) {
-    this.container = container;
-    this.size = this.container.dataset.size;
-    this.strokeWidth = this.size / 8;
-    this.radius = this.size / 2 - this.strokeWidth / 2;
-    this.value = this.container.dataset.value;
-    this.direction = this.container.dataset.arrow;
-    this.svg;
-    this.defs;
-    this.slice;
-    this.overlay;
-    this.text;
-    this.arrow;
-    this.create();
-  }
-
   createDefs() {
     var defs = document.createElementNS("http://www.w3.org/2000/svg", "defs"),
       linearGradient = document.createElementNS(
