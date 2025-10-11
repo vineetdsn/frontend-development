@@ -319,21 +319,6 @@ class Firework {
   }
 }
 
-
-  // 
- 
-
-function setVoice() {
-  msg.voice = voices.find((voice) => voice.name === this.value);
-  toggle();
-}
-function toggle(startOver = true) {
-  speechSynthesis.cancel();
-  if (startOver) {
-    speechSynthesis.speak(msg);
-  }
-}
-
 function setOption() {
   console.log(this.name, this.value);
   msg[this.name] = this.value;
