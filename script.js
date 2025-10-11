@@ -255,20 +255,7 @@ for (i=0; i<cards; i++){
   }
 
 
-  setValue(value) {
-    let c = (value / 100) * 360;
-    if (c === 360) c = 359.99;
-    const xy = this.size / 2 - this.strokeWidth / 2;
-    const d = this.describeArc(xy, xy, xy, 180, 180 + c);
-    this.slice.setAttribute("d", d);
-    const tspanSize = this.size / 3.5 / 3;
-    this.text.innerHTML = `${Math.floor(value)}% `;
-  }
-
-  animateReset() {
-    this.setValue(0);
-  }
-}
+ 
 
 const containers = document.getElementsByClassName("chart");
 const dial = new Dial(containers[0]);
