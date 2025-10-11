@@ -219,32 +219,6 @@ for (i=0; i<cards; i++){
     this.text = text;
   }
 
-  createArrow() {
-    var arrowSize = this.size / 10;
-    var mapDir = {
-      up: [(arrowYOffset = arrowSize / 2), (m = -1)],
-      down: [(arrowYOffset = 0), (m = 1)]
-    };
-    function getDirection(i) {
-      return mapDir[i];
-    }
-    var [arrowYOffset, m] = getDirection(this.direction);
-
-    let arrowPosX = this.size / 2 - arrowSize / 2,
-      arrowPosY = this.size - this.size / 3 + arrowYOffset,
-      arrowDOffset = m * (arrowSize / 1.5),
-      arrow = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    arrow.setAttribute(
-      "d",
-      `M 0 0 ${arrowSize} 0 ${arrowSize / 2} ${arrowDOffset} 0 0 Z`
-    );
-    arrow.setAttribute("fill", "none");
-    arrow.setAttribute("opacity", "0.6");
-    arrow.setAttribute("transform", `translate(${arrowPosX},${arrowPosY})`);
-    this.svg.appendChild(arrow);
-    this.arrow = arrow;
-  }
-
 
  
 
